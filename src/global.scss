@@ -1,0 +1,115 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+span{
+    margin-right: 284px;
+}
+
+    .submit-btn {
+        color:#FFF;
+        background: rgba(0,0,0,0);
+        border-radius: 30px !important;
+        border: 1px solid #FFF;
+      }
+
+ion-input{
+    --padding-start: 384px;
+}
+/*DIGITAL CLOCK styling*/
+
+   * {
+     margin: 0;
+     padding: 0;
+   }
+   
+   h1 {
+     font-size: 14px;
+     font-weight: bold;
+     text-align: center;
+     text-transform: uppercase;
+     font-family: sans-serif;
+     padding-bottom: 15px;
+   }
+   main.clock-display {
+     color: #ffffff;
+   }
+   .light-on {
+     color: #ffffff !important;
+   }
+   ion-label{
+    font-size:26px;
+    font-family: 'digital-7';
+    color:red;
+  }   
+  ion-card{
+    background: black;
+  }
+  ion-content{
+    background: black;
+  }
+  ion-card-title{
+    color:white;
+  }
+   @media (max-width: 768px) {
+     .date-field {
+       justify-content: space-evenly;
+     }
+     .date-field div.day-of-week {
+       display: none;
+     }
+     .date-field div.day-of-week-mobile {
+       display: inline-block;
+     }
+     .date-field div.day-of-week-mobile p {
+       font-size: 56px;
+       margin-top: -2px;
+     }
+   }
+   @media (max-width:550px) {
+     .date-field div.day-of-week-mobile p {
+       font-size: 50px;
+       margin-top: 0px;
+     }
+   }
+   @media (max-width:468px) {
+     .date-field div.day-of-week-mobile p {
+       font-size: 42px;
+     }
+   }
+   @media (max-width:400px) {
+     .date-field div.day-of-week-mobile p {
+       font-size: 20px;
+     }
+   }
+
+   
+   @media (max-width:768px) {
+   
+     .desktop-view {
+       display: none;
+     }
+   }
+   

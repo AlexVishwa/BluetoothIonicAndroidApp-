@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-avatar>
+      <img src="assets/logokura.png">
+    </ion-avatar>
+    <ion-label>Please Enter System Id</ion-label>
+    <ion-input placeholder="Enter Value" #password></ion-input>
+  </div>
+    <ion-button expand="full" (click)="pass(password.value)">Login</ion-button>
+</ion-content>

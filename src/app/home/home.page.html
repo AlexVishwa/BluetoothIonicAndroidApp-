@@ -1,0 +1,152 @@
+<ion-header>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-item id="topitem"> 
+    
+      <ion-button id="myBtn" [routerLink]="['/modal']" expand="block" shape="round" #settings>
+        <ion-icon name="cog-outline" size="small"></ion-icon>
+      SETTINGS
+      </ion-button>
+  </ion-item>
+  
+  <div id="container">  
+    <ion-card>
+      <ion-card-content>
+        <ion-label id="temp">25C</ion-label>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content>
+        <ion-label id="steam">min</ion-label>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-toolbar>
+      <ion-segment value="Temperature">
+        <ion-segment-button value="decrease" (click)="decrease()">
+          <ion-icon name="arrow-down-circle-outline"></ion-icon>
+        </ion-segment-button>
+        
+          <ion-segment-button value="increase" (click)="increase()">
+            <ion-icon name="arrow-up-circle-outline"></ion-icon>
+          </ion-segment-button>
+      </ion-segment>
+      <ion-segment value="Temperature">
+        <ion-segment-button value="decrease" (click)="decreaseTime()">
+          <ion-icon name="caret-down-outline"></ion-icon>
+        </ion-segment-button>
+        
+          <ion-segment-button value="increase" (click)="increaseTime()">
+            <ion-icon name="caret-up-outline"></ion-icon>
+          </ion-segment-button>
+      </ion-segment>
+      <ion-segment value="Temperature">
+        <ion-segment-button value="decrease">
+          <ion-avatar>
+            <img src="assets/redled.png" id="myImage2">
+          </ion-avatar>
+        </ion-segment-button>
+        
+          <ion-segment-button value="increase" (click)="check()">
+            <ion-avatar>
+              <img src="assets/powerOff.png" id="myImage">
+            </ion-avatar>
+          </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+    <ion-footer>
+      <ion-toolbar>
+        <ion-segment value="status">
+            <ion-segment-button value="increase">
+              <ion-avatar>
+                <img id="myImage3" src="assets/redled.png">
+              </ion-avatar>
+              DRAIN
+            </ion-segment-button>
+            <ion-segment-button value="increase">
+              <ion-avatar>
+                <img id="myImage4" src="assets/redled.png">
+              </ion-avatar>
+              WATER
+            </ion-segment-button>
+            <ion-segment-button value="increase">
+              <ion-avatar>
+                <img id="myImage5" src="assets/redled.png">
+              </ion-avatar>
+              DESCALING
+            </ion-segment-button>
+            <ion-segment-button value="increase">
+              <ion-avatar>
+                <img id="myImage6" src="assets/redled.png">
+              </ion-avatar>
+              DOSING
+            </ion-segment-button>
+        </ion-segment>
+      </ion-toolbar>
+    </ion-footer>
+    <!--
+        <div class="col-sm-12 col-md-12">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Steam Counter</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <ion-label id="steam">min</ion-label>
+            </ion-card-content>
+          </ion-card>
+              <ion-item>
+                <ion-avatar>
+                  <img id="myImage1" src="assets/redled.png">
+                </ion-avatar>
+                <ion-label>SYSTEM</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-avatar>
+                  <img id="myImage2" src="assets/redled.png">
+                </ion-avatar>
+                <ion-label>HEATER</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-avatar>
+                  <img id="myImage3" src="assets/redled.png">
+                </ion-avatar>
+                <ion-label>DRAIN</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-avatar>
+                  <img id="myImage4" src="assets/redled.png">
+                </ion-avatar>
+                <ion-label>INPUT WATER</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-avatar>
+                  <img id="myImage5" src="assets/redled.png">
+                </ion-avatar>
+                <ion-label>DESCALING</ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-avatar>
+                  <img id="myImage6" src="assets/redled.png">
+                </ion-avatar>
+                <ion-label>DOSING</ion-label>
+              </ion-item>
+            -->
+          
+        
+        <div class="row">
+          <div class="col-sm-12">
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>Water Percentage</ion-card-title>
+              </ion-card-header>
+            
+              <ion-card-content>
+                <ion-label id="water">45%</ion-label>
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </div>
+        
+  </div>
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Quantum Solutions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container2">
+  <ion-button expand="full" class="submit-button" (click)="enableBt()">
+    <ion-icon name="powerOutline"></ion-icon>&nbsp;Turn On Bluetooth</ion-button>
+  <ion-button expand="full" class="submit-button" (click)="listPairedDevices()">
+    <ion-icon name="refresh"></ion-icon>&nbsp;Refresh Bluetooth Devices</ion-button>
+  <ion-row>
+    <ion-col>
+      <ion-list>
+        <ion-radio-group [(ngModel)]="pairedDeviceId" *ngIf="listToggle">
+        <ion-item *ngFor="let i of pairedList;let j=index">
+          <ion-label>{{i.name}}</ion-label>
+          <ion-radio value="{{j}}"></ion-radio>
+        </ion-item>
+        </ion-radio-group>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+  <ion-button expand="full" class="submit-button" (click)="selectDevice()" *ngIf="listToggle">
+    <ion-icon name="bluetooth"></ion-icon>&nbsp;Connect Bluetooth Devices
+  </ion-button>
+  </div>
+</ion-content>
